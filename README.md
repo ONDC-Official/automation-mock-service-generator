@@ -1,0 +1,1 @@
+# automation-mock-service-generator
