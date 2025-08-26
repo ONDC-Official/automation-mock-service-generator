@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"module": "nodenext",
+		"moduleResolution": "nodenext",
+		"target": "ES2020",
+    	"rootDir":"./src",
+		"outDir": "./dist",
+		"declaration": true,
+		"declarationMap": true,
+		"strict": true,
+		"skipLibCheck": true,
+		// "allowSyntheticDefaultImports": true, // Allow synthetic default imports
+		"esModuleInterop": true // Enables compatibility with Babel imports
+	},
+	"include": ["src"],
+	"exclude": ["node_modules"]
+}
