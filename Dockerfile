@@ -8,7 +8,6 @@ RUN npm i
 
 COPY . .
 RUN npm run build
-RUN npm start
 
 
 
