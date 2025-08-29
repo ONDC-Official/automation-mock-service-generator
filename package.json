@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "fs-extra": "^11.3.1",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "tsx": "^4.20.5"
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.4",
