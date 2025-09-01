@@ -12,7 +12,7 @@ RUN npm run build
 
 
 # Stage 2: Production Container
-FROM node:18-alpine
+FROM node:22.19.0-alpine3.22
 
 WORKDIR /app
 
