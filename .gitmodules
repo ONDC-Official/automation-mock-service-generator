@@ -1,4 +1,0 @@
-[submodule "template/automation-mock-service"]
-	path = template/automation-mock-service
-	url = https://github.com/ONDC-Official/automation-mock-service.git
-	branch = template-module
