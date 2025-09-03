@@ -153,3 +153,5 @@ Session.vim
 tags
 build-output
 dist
+
+src/config/mock-config
