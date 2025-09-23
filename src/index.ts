@@ -1,5 +1,3 @@
-
-
 import path from "path";
 import fse from "fs-extra";
 import { fileURLToPath } from "url";
@@ -10,13 +8,13 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export function checkConfigExists() {
-  const configDir = path.resolve("src/config");
+	const configDir = path.resolve("src/config");
 
-  if (!fse.existsSync(configDir)) {
-    return false;
-  }
+	if (!fse.existsSync(configDir)) {
+		return false;
+	}
 
-  return true;
+	return true;
 }
 
 export const createMockServiceLayer = async () => {
@@ -24,7 +22,10 @@ export const createMockServiceLayer = async () => {
 
 	// paths
 	const srcConfig = path.resolve(__dirname, "../src/config");
-	const templateDir = path.resolve(__dirname, "../template/automation-mock-service");
+	const templateDir = path.resolve(
+		__dirname,
+		"../template/automation-mock-service"
+	);
 	const outputDir = path.resolve(
 		__dirname,
 		"../build-output/automation-mock-service"
@@ -37,7 +38,7 @@ export const createMockServiceLayer = async () => {
 	// Step 2: Copy src/config → build-output/automation-mock-service/src/config
 	// await fse.ensureDir(outputConfig);
 	await clearAndCopy(srcConfig, outputConfig);
-  await createEnvFile()
+	await createEnvFile();
 
 	console.log(`✅ Mock service layer created at: ${outputDir}`);
 };
